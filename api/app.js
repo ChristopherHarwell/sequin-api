@@ -12,7 +12,7 @@ if (process.env.NODE_ENV != "production" && config_result.error) {
 
 // ###[  Routers ]###
 const indexRouter = require("./index/indexRouter");
-const CardRouter = require("./CardRouter");
+const CardRouter = require("./Cards/CardRouter");
 
 const app = express();
 

@@ -1,6 +1,6 @@
 
-const { select } = require("../data/db-config");
-const db = require("../data/db-config");
+const { select } = require("../../data/db-config");
+const db = require("../../data/db-config");
 
 function findBalance(id) {
   return db("cards").where({ id }).select("balance");
@@ -17,7 +17,6 @@ function findLimit() {
 function findBy(filter) {
   return db("cards").where(filter).orderBy("userId");
 }
-
 
 
 async function add(card) {
